@@ -1,0 +1,52 @@
+<style>
+#pics {
+	visibility:hidden;
+}
+</style>
+<div class="img-contents">
+  <div class="img-back">
+    <h1>Nori</h1>
+    <div class="row">
+      <div class="col-sm-2 col-xs-3 col-sm-offset-2">
+        <img src="img/nori.gif" alt="">
+      </div>
+      <div class="col-sm-6 col-xs-9">
+
+        <p>ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文</p>
+        <canvas id="radar-chart" ></canvas>
+      </div>
+      <!-- <div class="col-xs-9 col-xs-offset-3 col-sm-6 col-sm-offset-4" style="float:left">
+
+      </div> -->
+    </div>
+    <div class="text-center">
+      <button ui-sref="main" class="btn btn-custom btn-lg">Main page</button>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> -->
+ <!-- もしくは<script src="Chart.js"></script> -->
+ <script type="text/javascript">
+ var radarChartData = {
+   labels: ["体力", "フォームの美しさ", "スマッシュの精度","胃袋の大きさ", "ノリの良さ"],
+   datasets: [
+     {
+       label: "me",
+       fillColor : /*"#f2dae8"*/"rgba(242,218,232,0.6)",
+       strokeColor : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       pointColor : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       pointStrokeColor : "#fff",
+       pointHighlightFill : "#fff",
+       pointHighlightStroke : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       data : [60,120,3,95,77]
+     }
+   ]
+ };
+
+ // window.onload = function(){
+   window.myRadar = new Chart(document.getElementById("radar-chart").getContext("2d")).Radar(radarChartData, {
+     responsive: true
+   });
+ // }
+ </script>

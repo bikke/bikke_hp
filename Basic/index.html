@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+
+<head>
+<title>2015/12/13(日) 中野家・足達家 結婚式＠八芳園</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<?php
+
+$count_step = 20;
+
+$count_b = 6015;
+$count_e = 6174;
+
+?>
+
+<img src="style/folder.jpg" alt="FOLDER" class="left-image"/>
+
+<div class="question_box">
+<p class="name">TITLE</p>
+<div id="arrow_question">
+          2015/12/13(日)<br />
+          中野家・足達家 結婚式＠八芳園<br />
+
+<?php
+
+$page = 0;
+if(isset($_GET['page'])) { $page = $_GET['page']; }
+
+$page_min = 0;
+$page_max = ceil(($count_e - $count_b + 1) / $count_step);
+
+for ($p = $page_min; $p < $page_max; $p++)
+{
+	if($page == $p)
+	{
+		print '[ ' . $p . ' ]';
+	}
+	else
+	{
+		print '[<a href="index.html?page=' . $p . '"> ' . $p . ' </a>]';
+	}
+}
+
+?>
+
+</div>
+</div><!-- /.question_box -->
+
+
+<?php
+
+for ($count = $count_b + $page * $count_step; $count <= $count_e and $count < $count_b + ($page+1) * $count_step; $count++){
+
+$filename = 'photo/DSC0' . $count . '.JPG';
+$imageinfo = getimagesize($filename);
+
+print '<div class="answer_box">';
+print '<p class="name02">SONY NEX5R</p>';
+print '<div id="arrow_answer">';
+print '     <a href="photo/DSC0' . $count . '.JPG"><img src="photo_resized/DSC0' . $count . '_resized.jpg" width="240"></a>';
+print '     <p>SIZE = ' . $imageinfo[0] . 'x' . $imageinfo[1] . '</p>';
+print '</div>';
+print '</div><!-- /.answer_box -->';
+print '';
+print '<img src="style/nex5r.jpg" alt="NEX5R" class="right_image"/>';
+print '';
+print '';
+
+}
+
+?>
+
+
+</div><!-- /#wrapper -->
+
+
+</body>
+</html>
