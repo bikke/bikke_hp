@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" ng-app="myapp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Nori</title>
+<meta name="description" content="スタイルが一新した京都大学テニスサークルBikkeのホームページです。メンバーは京大，奈良女を中心に様々な大学の学生で構成されています。テニスはもちろん、野球大会やバスケ・バレーボールとイベントも盛りだくさんです。">
+<meta name="author" content="">
+<meta name="keywords" content="テニス,テニサー,テニスサークル,サークル,京都大学,奈良,bikke,BIKKE,びっけ,京大びっけ">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="../css/bootstrap-theme.min.css">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
+
+<link rel="stylesheet" type="text/css"  href="../css/style.css">
+<!-- <link rel="stylesheet" type="text/css"  href="css/glyphicons.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    var radarChartData = {
+   labels: ["体力", "フォームの美しさ", "スマッシュの精度","胃袋の大きさ", "ノリの良さ"],
+   datasets: [
+     {
+       label: "me",
+       fillColor : /*"#f2dae8"*/"rgba(242,218,232,0.6)",
+       strokeColor : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       pointColor : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       pointStrokeColor : "#fff",
+       pointHighlightFill : "#fff",
+       pointHighlightStroke : /*"#dd9cb4"*/"rgba(221,156,180,0.6)",
+       data : [60,120,3,95,77]
+     }
+   ]
+ };
+
+    window.onload = function(){
+      window.myRadar = new Chart(document.getElementById("radar-chart").getContext("2d")).Radar(radarChartData, {
+        responsive: true
+      });
+    }
+    </script>
+
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="preloader"></div>
+  <div class="wrapper">
+  <style>
+  #pics {
+    visibility:hidden;
+  }
+  </style>
+  <div class="img-contents">
+    <div class="img-back">
+      <h1>Nori</h1>
+      <div class="row">
+        <div class="col-sm-2 col-xs-3 col-sm-offset-2">
+          <img src="../img/nori.gif" alt="nori">
+        </div>
+        <div class="col-sm-6 col-xs-9">
+
+          <p>ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文ノリさんの紹介文</p>
+          <canvas id="radar-chart"></canvas>
+        </div>
+
+      </div>
+      <div class="text-center">
+        <a href="../"><button class="btn btn-custom btn-lg">Main page</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> -->
+   <!-- もしくは<script src="Chart.js"></script> -->
+
+  </div>
+  <div ></div>
+  <!-- <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/jqBootstrapValidation.js"></script>
+
+  <script type="text/javascript" src="../js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/effect.js"></script><!--sentence animation-->
+  <script type="text/javascript" src="../js/img-anime.js"></script>
+  <script type="text/javascript" src="../js/pace.js"></script><!--loading-->
+  <script type="text/javascript" src="../js/Chart.min.js"></script>
+
+</body>
+</html>
