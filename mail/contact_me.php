@@ -29,13 +29,15 @@ $email_body = "You have received a new message from your website contact form.\n
                           Fac: $fac\n\n
                           Dep: $dep\n\n
                           Message:\n$message";
-$email_body2 = "You have sent a new message to BIKKE.\n\n".
+$email_body2 = "Thank you for your contact to BIKKE.\n\n".
 "Here are the details:\n\nName: $name\n\n
                           Email: $email_address\n\n
                           Univ: $univ\n\n
                           Fac: $fac\n\n
                           Dep: $dep\n\n
-                          Message:\n$message";
+                          Message:\n$message\n\n
+                          ////////////////////////////////////////////////////\n
+                          BIKKE\n--Kyoto University Tennis Club Since 1992--";
 // $headers = "From: noreply@narabikke.com\n";  This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers = "From: Contact@narabikke.com\n";
 $headers .= "Reply-To: $email_address";
