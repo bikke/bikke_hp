@@ -144,7 +144,7 @@ hr {
 }
 .intro h1 {
 	margin: 0;
-	padding: 5px;
+	padding: 25% 8px 0;
 }
 .intro::before{
  background: url("../back/1.jpg");
@@ -172,6 +172,10 @@ hr {
 	 padding: 0;
 	 margin: 0;
 	 height: 100%;
+	}
+	.intro h1 {
+		margin: 0;
+		padding: 10% 10px 0;
 	}
 }
 
@@ -449,6 +453,17 @@ color: #777;
 .form-control:-ms-input-placeholder {
 color: #777;
 }
+
+.form_rabel {
+	padding: 5px;
+	margin-top: 3px;
+}
+@media screen and (min-width: 940px) {
+	.form_label {
+		padding-top: 10px;
+	}
+}
+
 #contact .social {
 	margin-top: 80px;
 }
@@ -637,15 +652,17 @@ to {
 
 /* member introduction section */
 .img-contents {
+	background: rgba(25, 255, 255, 0.1);
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	width:100%;
 }
 
 .img-back {
-	background: rgba(25, 255, 255, 0.1);
 	padding: 20px;
-	height: 100%;
+	margin: 0;
+	/*height: 100%;*/
 }
 .img-back h1 {
 	font-size: 150px;
