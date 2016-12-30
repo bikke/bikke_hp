@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>BIKKEクイズ</h2>
+  <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Q.question1</div>
+  <div class="panel-body">
+    <p>{{que}}<span ng-bind-html="que1"></span><br /><a ui-sref="main">answer</a></p>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item" ng-bind-html="que1">{{que1}}</li>
+    <!-- <li class="list-group-item" ng-repeat="quest in question2">{{quest.question}}</li> -->
+    <!-- <script type="text/javascript">
+    var msg = new Array();
+
+    msg[0] = '<li class="list-group-item" ng-repeat="quest in question1">{{quest.question}}</li>';
+    msg[1] = '<li class="list-group-item" ng-repeat="quest in question2">{{quest.question}}</li>';
+
+    var no = Math.floor(Math.random() * msg.length);
+
+    document.write(msg[no]);
+      // document.write('<li class="list-group-item" ng-repeat="quest in question2">{{quest.question}}</li>');
+    </script> -->
+  </ul>
+</div>
+    <!-- <table class="table table-hover">
+      <!-- <tbody>
+        <tr><a ui-sref="main">銀座の高級店</a></tr>
+        <tr>回転寿司</tr>
+      <!-- </tbody>
+    </table> -->
+    <!-- <div ng-show="checked">
+        <p>ng-show属性では、式が真の場合に有効になります。チェックされると、真になるので、ここが開きます。</p>
+    </div>
+    <h1>ng-open属性</h1>
+<a ui-sref="main">銀座の高級店</a>
+<details ng-open="open">
+   <summary>開閉</summary>
+   <p>表示/非表示を切り替えます。<a ui-sref="main">銀座の高級店</a><br />ng-open属性の利用には、「details」タグ+「summary」タグが必要となります。※ブラウザによっては対応していないのでご注意ください。</p>
+</details> -->
+</div>
