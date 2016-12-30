@@ -21,4 +21,5 @@ function Controller($scope, $location, uiUtils, $interval, $http) {
   $scope.rand4_3 = ($scope.rand4_1+2) % ($scope.max+1);
   $scope.rand4_4 = ($scope.rand4_1+3) % ($scope.max+1);
 
+  $('#top_modal').modal('show');//ページがロードされた時にモーダルを呼び出す
 }
