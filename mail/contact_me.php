@@ -22,12 +22,13 @@ $to = 'bikke015@gmail.com'; // Add your email address inbetween the '' replacing
 $email_subject = "Website Contact Form:  $name";
 $email_subject2 = "Website Contact To:  BIKKE";
 $email_body = "You have received a new message from your website contact form.\n\n".
-"Here are the details:\n\nName: $name\n\n
-                          Email: $email_address\n\n
-                          Univ: $univ\n\n
-                          Fac: $fac\n\n
-                          Dep: $dep\n\n
-                          Message:\n$message";
+"Here are the details:\n\n
+Name: $name\n\n
+Email: $email_address\n\n
+Univ: $univ\n\n
+Fac: $fac\n\n
+Dep: $dep\n\n
+Message:\n$message";
 $email_body2 = "Thank you for your contact to BIKKE.\n\n".
 "Here are the details:\n\n
 Name: $name\n\n

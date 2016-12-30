@@ -2,7 +2,7 @@ body, html {
 	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #666;
+	color: #181818;
 	font-weight: 300;
 	width: 100% !important;
 	height: 100% !important;
@@ -29,10 +29,11 @@ h5 {
 }
 p {
 	font-size: 16px;
+	color: #181818
 }
 p.intro {
 	font-size: 16px;
-	margin: 12px 20px 0;
+	margin: 12px 0 0;
 	line-height: 24px;
 }
 a {
@@ -144,7 +145,7 @@ hr {
 }
 .intro h1 {
 	margin: 0;
-	padding: 5px;
+	padding: 25% 8px 0;
 }
 .intro::before{
  background: url("../back/1.jpg");
@@ -154,15 +155,15 @@ hr {
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
- /*background-attachment: fixed;*/
  position: fixed;
  top: 0;
  left: 0;
  width: 99%;
- height: 100vh;
- /*padding: 10% 0;*/
+ height: 100%;
  padding: 0;
  margin: 0;
+ content: "";
+ z-index: -10;
 }
 
 @media screen and (min-width: 940px) {
@@ -172,6 +173,10 @@ hr {
 	 padding: 0;
 	 margin: 0;
 	 height: 100%;
+	}
+	.intro h1 {
+		margin: 0;
+		padding: 10% 10px 0;
 	}
 }
 
@@ -201,8 +206,7 @@ header .intro-text {
 	display: flex;
   justify-content: center;
   align-items: center;
-	padding-top: 30%;
-	margin: 20px;
+	padding: 25% 0;
 }
 /* About Section */
 #about {
@@ -290,7 +294,7 @@ header .intro-text {
 
  /* bg-img parallax */
 .bg-img {
- height: 100vh;
+ height: 60vh;
  padding: 0;
  margin: 0;
 }
@@ -316,7 +320,7 @@ header .intro-text {
 }
 
 .bg-img2 {
- height: 100vh;
+ height: 60vh;
  padding: 0;
  margin: 0;
 }
@@ -383,7 +387,7 @@ header .intro-text {
 	background: rgba(255,255,255,0.35);
 	padding: 0;
 	margin: 0;
-	height: 100vh;
+	height: 60vh;
 	z-index: 50px;
 }
 
@@ -650,7 +654,6 @@ to {
 .img-back {
 	background: rgba(25, 255, 255, 0.1);
 	padding: 20px;
-	height: 100vh;
 }
 .img-back h1 {
 	font-size: 150px;
