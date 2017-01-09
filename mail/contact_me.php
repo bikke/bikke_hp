@@ -11,6 +11,8 @@ if(empty($_POST['name'])  		||
 	echo "No arguments Provided!";
 	return false;
    }
+
+   mb_convert_variables('Shift_JIS', 'UTF-8', $_POST);//encodingをutf-8からshift_jisに変換
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $univ = $_POST['univ'];
