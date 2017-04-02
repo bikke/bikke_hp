@@ -1,6 +1,6 @@
 // windowサイズの上から1/5までくるとtransition
 $(function(){
-  $('.effect1 h3, .effect1 h4, .effect1 p').css("opacity","0");
+  $('.effect1 h3, .effect1 p').css("opacity","0");
   $(window).scroll(function (){
     $(".effect1").each(function(){
       var imgPos = $(this).offset().top;

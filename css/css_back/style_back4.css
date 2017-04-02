@@ -1,9 +1,0 @@
-.bg-img1::before {
-  background: url('../../back/4.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
- }
